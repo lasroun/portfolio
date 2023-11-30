@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joel Mahougnon Houetchekpo, Développeur Web Full-Stack expert en Nuxt.js, Express.js,
+         et Django. Explorez mon portfolio pour voir mes réalisations et mes compétences.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
+  <title>Joel_MH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="sticky top-0 z-10 h-14 bg-white md:h-20 px-4 shadow-sm py-2 md:px-20 flex items-center">
+    <nav class="flex items-center gap-x-4 justify-between md:justify-normal w-full">
+      <div class="md:w-1/3">
+        <h1>
+          <a href="#presentation" class="font-semibold text-2xl">Joel Mahougnon H.</a>
+        </h1>
+      </div>
+      <div class="hidden md:flex gap-x-8 w-/3">
+        <a href="#presentation" class="hover:underline">Présentation</a>
+        <a href="#projets" class="hover:underline">Projets</a>
+        <a href="#services" class="hover:underline">Mes services</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+      <button type="button" class="md:hidden">
+        <img src="/assets/image/menu.svg" alt="boutton menu" class="w-6">
+      </button>
+    </nav>
+  </header>
+  <section id="presentation" class="md:h-screen py-8 px-4 md:px-20">
+    <div class="md:flex mt-4 md:mt-10 md:items-center">
+      <div class="md:w-2/5 md:pl-10 pb-4 md:pb-0 md:translate-x-16">
+        <span class="font-extralight text-blue-500">Développeur Web</span>
+        <h2 class="text-3xl font-light">Expert en <span class="font-normal text-blue-500">JavaScript</span> et <span
+            class="text-blue-500 font-normal">Python</span> <br> je conçois des solutions web innovantes depuis plus de
+          deux
+          ans d'expérience.
+        </h2>
+        <div class="mt-4 md:mt-10 space-x-4">
+          <button onclick="window.location.href='#projets'"
+            class="shadow p-2 bg-blue-500 text-white border border-blue-500 rounded-md">
+            Mes projets
+          </button>
+          <button onclick="window.location.href='#contact'" class="shadow p-2 border rounded-md">
+            Contactez-Moi
+          </button>
+        </div>
+      </div>
+      <div class="md:w-3/5 md:flex md:justify-end -mx-4 md:mx-0">
+        <div class="md:w-2/3">
+          <img src="/assets/image/ma-photo.jpeg" alt="photo de joel" class="w-full md:h-[450px] md:w-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projets" class="md:h-screen py-8 md:py-0 bg-slate-700 flex items-center text-white px-4 md:px-20">
+    <div class="relative">
+      <div class="md:absolute flex right-0 space-x-4">
+        <button id="prevBtn" class="bg-white p-3 rounded-full">
+          <img src="/assets/image/chevron-left.svg" alt="chevron gauche" class="w-6">
+        </button>
+        <button id="nextBtn" class="bg-white p-3 rounded-full">
+          <img src="/assets/image/chevron-right.svg" alt="chevron droit" class="w-6">
+        </button>
+      </div>
+      <div id="element1" class="mt-4 md:mt-12 items-center justify-center">
+        <div class="md:w-1/2">
+          <img src="/assets/image/beninshoppingguide.jpg" alt="photo de Bénin Shopping Guide" class="rounded-md">
+        </div>
+        <div class="md:w-1/2 md:pl-10">
+          <h3 class="text-2xl">Bénin Shopping Guide</h3>
+          <p class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum magni, non sunt
+            deserunt ut
+            blanditiis maxime eos omnis doloribus rem placeat, obcaecati repellendus magnam dolore assumenda natus id?
+            Laborum.</p>
+          <div class="space-x-4 mt-4 md:mt-10">
+            <button class="shadow p-2 border bg-white text-black rounded-md"
+              onclick="location.href='https://beninshoppingguide.com/'">Voir</button>
+            <button class="shadow p-2 border bg-white text-black rounded-md">Github</button>
+          </div>
+        </div>
+      </div>
+      <div id="element2" class="hidden mt-4 md:mt-12 items-center justify-center">
+        <div class="md:w-1/2">
+          <img src="/assets/image/simitbot.png" alt="photo de Bénin Shopping Guide" class="rounded-md">
+        </div>
+        <div class="md:w-1/2 md:pl-10">
+          <h3 class="text-2xl">Simint BOT</h3>
+          <p class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum magni, non sunt
+            deserunt ut
+            blanditiis maxime eos omnis doloribus rem placeat, obcaecati repellendus magnam dolore assumenda natus id?
+            Laborum.</p>
+          <div class="space-x-4 mt-4 md:mt-10">
+            <button class="shadow p-2 border bg-white text-black rounded-md"
+              onclick="location.href='https://beninshoppingguide.com/'">Voir</button>
+            <button class="shadow p-2 border bg-white text-black rounded-md">Github</button>
+          </div>
+        </div>
+      </div>
+      <div id="element3" class="hidden mt-4 md:mt-12 items-center justify-center">
+        <div class="md:w-1/2">
+          <img src="/assets/image/stewdy.jpeg" alt="photo de Bénin Shopping Guide" class="rounded-md">
+        </div>
+        <div class="md:w-1/2 md:pl-10">
+          <h3 class="text-2xl">Stewdy</h3>
+          <p class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum magni, non sunt
+            deserunt ut
+            blanditiis maxime eos omnis doloribus rem placeat, obcaecati repellendus magnam dolore assumenda natus id?
+            Laborum.</p>
+          <div class="space-x-4 mt-4 md:mt-10">
+            <button class="shadow p-2 border bg-white text-black rounded-md"
+              onclick="location.href='https://beninshoppingguide.com/'">Voir</button>
+            <button class="shadow p-2 border bg-white text-black rounded-md">Github</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="md:h-screen px-4 py-8 md:py-0 md:px-20 flex flex-col justify-center">
+    <div class="md:flex md:space-x-8">
+      <div class="flex-1 p-3 mb-4 bg-blue-500 shadow-md rounded-lg text-white">
+        <div>img</div>
+        <h3 class="text-2xl text-center pb-4">Développement de Sites Web </h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, ducimus quo asperiores odio rem, voluptatum
+          nisi dolore nesciunt, illum sapiente mollitia nihil dignissimos quis laudantium dolor? Magni mollitia veniam
+          soluta.</p>
+      </div>
+      <div class="flex-1 p-3 mb-4 bg-blue-500 shadow-md rounded-lg text-white">
+        <div>img</div>
+        <h3 class="text-2xl pb-4">Consultation Technique</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, ducimus quo asperiores odio rem, voluptatum
+          nisi dolore nesciunt, illum sapiente mollitia nihil dignissimos quis laudantium dolor? Magni mollitia veniam
+          soluta.</p>
+      </div>
+      <div class="flex-1 p-3 bg-blue-500 shadow-md rounded-lg text-white">
+        <div>img</div>
+        <h3 class="text-2xl pb-4">Développement d’API</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, ducimus quo asperiores odio rem, voluptatum
+          nisi dolore nesciunt, illum sapiente mollitia nihil dignissimos quis laudantium dolor? Magni mollitia veniam
+          soluta.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="px-4 py-4 md:px-20 md:py-20 bg-gray-100">
+    <div class="flex justify-center">
+      <div class="text-center">
+        <h1 class="text-2xl font-bold">Contactez-moi</h1>
+        <p class="text-gray-600 mt-2">Suivez-moi sur mes réseaux sociaux ou envoyez-moi un e-mail.</p>
+
+        <div class="flex justify-center mt-4">
+          <a href="https://twitter.com/lasroun" class="mx-2 hover:underline">
+            X
+          </a>
+          <a href="https://www.facebook.com/joelmahougnonh" class="mx-2 hover:underline">
+            Facebook
+          </a>
+          <a href="https://www.linkedin.com/in/joelmh" class="mx-2 hover:underline">
+            linkedin
+          </a>
+        </div>
+
+        <p class="mt-4">
+          Email: <a href="mailto:joel.houetchekpo@gmail.com" class="text-blue-500 underline">joel.houetchekpo@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <hr class="mx-4 md:mx-20">
+  <footer class="h-10 md:h-16 py-2 px-4 md:px-20 flex items-center justify-between">
+    <span>&copy; 2023 Joel M. Houetchekpo. Tous droits réservés.</span>
+    <div class="flex gap-x-4">
+      <a href="https://github.com/lasroun" class="hover:underline">Github</a>
+      <a href="https://gitlab.com/lasroun" class="hover:underline">Gitlab</a>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
